@@ -1,6 +1,6 @@
 {
   "name": "@ermolaev/mind-ui",
-  "version": "0.3.3",
+  "version": "0.4.0",
   "description": "UI library from M.I.N.D",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
