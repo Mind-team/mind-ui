@@ -6,9 +6,9 @@ export const decorators = [
     return (
       <ThemeProvider
         theme={
-          localStorage.getItem("theme") === "light"
-            ? LightThemeConfig
-            : DarkThemeConfig
+          localStorage.getItem("theme") === "dark"
+            ? DarkThemeConfig
+            : LightThemeConfig
         }
       >
         <Story />
