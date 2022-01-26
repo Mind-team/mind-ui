@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import * as MiniStyles from "./ParkingWidgetMini.styles";
 import * as LongStyles from "./ParkingWidgetLong.styles";
-import { useDate } from "../../hooks/date.hook";
+import { useDate } from "../../hooks";
 
 export interface IParkingWidgetData {
   parkingName: string;
