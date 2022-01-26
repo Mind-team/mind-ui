@@ -1,7 +1,7 @@
 import React, { FC, useState } from "react";
 import * as MiniStyles from "./ParkingWidgetMini.styles";
 import * as LongStyles from "./ParkingWidgetLong.styles";
-import { useDate } from "../../hooks";
+import { useDate, usePrice } from "../../hooks";
 
 export interface IParkingWidgetData {
   parkingName: string;
@@ -38,6 +38,7 @@ export const ParkingWidget: FC<IParkingWidgetProps> = ({ size, data }) => {
   const { formattedDate, formattedTime } = useDate(
     "date" in data ? data.date : null
   );
+  const [priceLine] = usePrice("price" in data ? data.price : null);
 
   if (size === "mini") {
     return (
@@ -53,7 +54,7 @@ export const ParkingWidget: FC<IParkingWidgetProps> = ({ size, data }) => {
             <span>Вы сейчас на парковке</span>
           </MiniStyles.TitleWrapperUnfilled>
         )}
-        <MiniStyles.Sum>{data.price}₽</MiniStyles.Sum>
+        <MiniStyles.Sum>{priceLine}</MiniStyles.Sum>
         <MiniStyles.Details onClick={data.detailsClick}>
           Подробнее
         </MiniStyles.Details>
@@ -69,7 +70,7 @@ export const ParkingWidget: FC<IParkingWidgetProps> = ({ size, data }) => {
       <LongStyles.Title>
         {(data as unknown as ILongParkingWidgetProps["data"]).parkingName}
       </LongStyles.Title>
-      <div>{isHover ? "Подробнее" : data.price + "₽"}</div>
+      <div>{isHover ? "Подробнее" : priceLine}</div>
       <LongStyles.Date>{formattedDate}</LongStyles.Date>
     </LongStyles.Wrapper>
   );
