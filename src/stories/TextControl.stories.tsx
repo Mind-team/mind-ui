@@ -15,4 +15,5 @@ export const Login = Template.bind({});
 Login.args = {
   type: "text",
   placeholder: "Номер телефона",
+  valueChange: (value: string) => console.log(value),
 };

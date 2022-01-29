@@ -4,11 +4,13 @@ import * as S from "./TextControl.styles";
 export interface ITextControl {
   type: "text" | "password";
   placeholder: string;
+  valueChange: (value: string) => void;
 }
 
 export const TextControl: FC<ITextControl> = ({
   type = "text",
   placeholder,
+  valueChange,
 }) => {
   const [content, setContent] = useState("");
   const [isTouched, setTouched] = useState(false);
@@ -17,6 +19,7 @@ export const TextControl: FC<ITextControl> = ({
   const handleChange = (event: any) => {
     setTouched(true);
     setContent(event.target.value);
+    valueChange(event.target.value);
   };
 
   return (
