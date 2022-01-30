@@ -1,4 +1,4 @@
-import {IThemeConfig} from "./ThemeConfig.interface";
+import { IThemeConfig } from "./ThemeConfig.interface";
 
 export const LightThemeConfig: IThemeConfig = {
   accent: "#886DEC",
@@ -6,7 +6,7 @@ export const LightThemeConfig: IThemeConfig = {
   header: "#FFFFFF",
   plainText: "#000000",
   widgetBackground: "#FFFFFF",
-}
+};
 
 export const DarkThemeConfig: IThemeConfig = {
   accent: "#886DEC",
@@ -14,4 +14,4 @@ export const DarkThemeConfig: IThemeConfig = {
   header: "#1C1C1C",
   plainText: "#FFFFFF",
   widgetBackground: "#1C1C1C",
-}
+};

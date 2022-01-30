@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ButtonWrapper = styled.button`
-  width: 112px;
   height: 53px;
   background: ${(props) => props.theme.accent};
   border-radius: 16px;
@@ -27,4 +26,5 @@ export const ButtonTitle = styled.span`
   display: flex;
   align-self: center;
   justify-self: center;
+  padding: 13px 23px;
 `;

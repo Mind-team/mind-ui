@@ -1,6 +1,6 @@
 {
   "name": "@ermolaev/mind-ui",
-  "version": "1.0.0-beta.2",
+  "version": "1.0.0-beta.6",
   "description": "UI library from M.I.N.D",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
@@ -38,7 +38,8 @@
   },
   "peerDependencies": {
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
   },
   "dependencies": {
     "@ermolaev/mind-ui": "^0.3.1",
