@@ -7,7 +7,7 @@
 npm i @ermolaev/mind-ui
 ```
 
-## Использование (дописать)
+## Использование
 Просто импортируйте нужные компоненты 
 ``` ts
 import { Button } from "@ermolaev/mind-ui";
