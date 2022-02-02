@@ -13,7 +13,12 @@ npm i @ermolaev/mind-ui
 import { Button } from "@ermolaev/mind-ui";
 
 export const TestComponent = () => {
-  return ();
+  return (
+    <Button
+      click={() => console.log("Handle click")}
+      title="Войти"
+    />
+  );
 }
 ```
 
