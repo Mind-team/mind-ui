@@ -18,7 +18,7 @@ MiniCompleted.args = {
     parkingName: "Гринвич",
     date: new Date(),
     price: 100,
-    detailsClick: () => {},
+    detailsClick: () => console.log("Click"),
   },
 };
 
@@ -27,7 +27,7 @@ MiniUncompleted.args = {
   size: "mini",
   data: {
     price: 100,
-    detailsClick: () => {},
+    detailsClick: () => console.log("Click"),
   },
 };
 
@@ -38,6 +38,6 @@ Long.args = {
     parkingName: "Гринвич",
     date: new Date(),
     price: 100,
-    detailsClick: () => {},
+    detailsClick: () => console.log("Click"),
   },
 };

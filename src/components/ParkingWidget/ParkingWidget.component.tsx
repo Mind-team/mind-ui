@@ -70,7 +70,7 @@ export const ParkingWidget: FC<IParkingWidgetProps> = ({ size, data }) => {
       <LongStyles.Title>
         {(data as unknown as ILongParkingWidgetProps["data"]).parkingName}
       </LongStyles.Title>
-      <div>{isHover ? "Подробнее" : priceLine}</div>
+      <div onClick={data.detailsClick}>{isHover ? "Подробнее" : priceLine}</div>
       <LongStyles.Date>{formattedDate}</LongStyles.Date>
     </LongStyles.Wrapper>
   );
