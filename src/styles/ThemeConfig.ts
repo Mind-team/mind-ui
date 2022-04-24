@@ -1,4 +1,4 @@
-import { IThemeConfig } from "./ThemeConfig.interface";
+import {IThemeConfig} from "../context/theme/theme.provider";
 
 export const LightThemeConfig: IThemeConfig = {
   accent: "#886DEC",

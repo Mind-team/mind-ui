@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { DarkThemeConfig, LightThemeConfig } from "../src/styles";
+import { DarkThemeConfig, LightThemeConfig } from "../src";
 
 export const decorators = [
   (Story) => {

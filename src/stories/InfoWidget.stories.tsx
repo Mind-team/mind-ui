@@ -1,6 +1,6 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import React from "react";
-import { InfoWidget } from "../components/InfoWidget";
+import { GradientBackground, InfoWidget } from "../components/InfoWidget";
 
 export default {
   title: "Common/InfoWidget",
@@ -18,4 +18,14 @@ Mini.args = {
     leftSideContent: "Ваша карта:",
     rightSideContent: "8840",
   },
+};
+
+export const Round = Template.bind({});
+Round.args = {
+  size: "round",
+  data: {
+    text: "Русский язык",
+    gradientBackground: GradientBackground.RedNBlue,
+  },
+  click: () => console.log("Click"),
 };

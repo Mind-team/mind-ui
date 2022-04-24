@@ -43,7 +43,7 @@ export const ParkingWidget: FC<IParkingWidgetProps> = ({ size, data }) => {
   if (size === "mini") {
     return (
       <MiniStyles.Wrapper>
-        {"parkingName" in data && data.parkingName && data.date && data.date ? (
+        {"parkingName" in data && data.parkingName && data.date ? (
           <MiniStyles.TitleWrapper>
             <span>{data.parkingName}</span>
             <span>{formattedTime}</span>
